@@ -6,6 +6,11 @@
 
 > HTML não é linguagem de programação
 
+## atalhos e extensions
+
+- `ctrl` + `;` ou `ctrl` + `/`: comenta o trecho selecionado
+- color highlight
+
 ## visualizando recarregamentos
 
 - extensao live preview da microsoft
