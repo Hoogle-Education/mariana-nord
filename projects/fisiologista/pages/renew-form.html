@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Renovar avaliação</title>
+  </head>
+  <body style="height: 100vh">
+    <header>
+      <nav class="navbar bg-primary">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand text-white">
+            <i class="bi bi-file-earmark-medical-fill"></i>
+            BLUEFIT
+          </a>
+          <div class="d-flex gap-3">
+            <a class="nav-link active" href="../index.html">Home</a>
+            <a class="nav-link active" href="./dashboard.html">Painel Geral</a>
+            <a class="nav-link active" href="./contact.html">Contato</a>
+            <a class="nav-link" href="../index.html">Sair</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="p-4 text-center bg-body-tertiary">
+        <div class="container py-4">
+          <h1 class="text-body-emphasis">Renovar avaliação</h1>
+        </div>
+      </div>
+      <div class="mx-5 mt-2">
+        <form class="card">
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome do paciente</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                placeholder="Nome"
+                required
+              />
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-sm-2 fs-5 fw-bold">Teste</div>
+              <div class="col-sm-4 fs-5 fw-bold">Resultado</div>
+              <div class="col-sm-6 fs-5 fw-bold">Considerações</div>
+            </div>
+
+            <hr class="my-2" />
+
+            <div class="row mb-3">
+              <div class="fs-6 col-sm-2">
+                <label>
+                  <span class="fw-bold">A1</span> (30'' Sit & Stand Test)
+                </label>
+              </div>
+              <div class="col-sm-4">
+                <input
+                  id="resultadoA1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Resultado"
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  id="consideracoesA1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Considerações"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="fs-6 col-sm-2">
+                <label> <span class="fw-bold">A2</span> 2' Step Test </label>
+              </div>
+              <div class="col-sm-4">
+                <input
+                  id="resultadoA2"
+                  type="text"
+                  class="form-control"
+                  placeholder="Resultado"
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  id="consideracoesA2"
+                  type="text"
+                  class="form-control"
+                  placeholder="Considerações"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="fs-6 col-sm-2">
+                <label>
+                  <span class="fw-bold">A3</span> (6' Walking Test)
+                </label>
+              </div>
+              <div class="col-sm-4">
+                <input
+                  id="resultadoA3"
+                  type="text"
+                  class="form-control"
+                  placeholder="Resultado"
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  id="consideracoesA2"
+                  type="text"
+                  class="form-control"
+                  placeholder="Considerações"
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-sm-2 fs-5 fw-bold">Teste</div>
+              <div class="col-sm-1 fs-5 fw-bold">Distância</div>
+              <div class="col-sm-1 fs-5 fw-bold">VO2 máx</div>
+              <div class="col-sm-1 fs-5 fw-bold">FC repouso</div>
+              <div class="col-sm-1 fs-5 fw-bold">FC final do teste</div>
+              <div class="col-sm-1 fs-5 fw-bold">FC após 1'</div>
+              <div class="col-sm-5 fs-5 fw-bold">Considerações</div>
+            </div>
+
+            <hr class="my-2" />
+
+            <div class="row mb-3">
+              <div class="fs-6 col-sm-2">
+                <label>
+                  <span class="fw-bold">A4</span> (12' Cooper Test)
+                </label>
+              </div>
+              <div class="col-sm-1">
+                <input id="resultadoA3" type="number" class="form-control" />
+              </div>
+              <div class="col-sm-1">
+                <input id="resultadoA3" type="number" class="form-control" />
+              </div>
+              <div class="col-sm-1">
+                <input id="resultadoA3" type="number" class="form-control" />
+              </div>
+              <div class="col-sm-1">
+                <input id="resultadoA3" type="number" class="form-control" />
+              </div>
+              <div class="col-sm-1">
+                <input id="resultadoA3" type="number" class="form-control" />
+              </div>
+              <div class="col-sm-5">
+                <input
+                  id="consideracoesA2"
+                  type="text"
+                  class="form-control"
+                  placeholder="Considerações"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="d-flex justify-content-around">
+              <button type="reset" class="btn btn-outline-danger col-sm-4">
+                Cancelar
+              </button>
+              <button type="submit" class="btn btn-primary col-sm-4">
+                Cadastrar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
